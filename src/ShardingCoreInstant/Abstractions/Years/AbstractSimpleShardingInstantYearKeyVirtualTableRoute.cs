@@ -4,7 +4,7 @@ using ShardingCore.Core.VirtualRoutes;
 
 namespace ShardingCore.Abstractions.Years
 {
-    public abstract class AbstractSimpleShardingYearKeyInstantVirtualTableRoute<TEntity> : AbstractShardingTimeKeyInstantVirtualTableRoute<TEntity> where TEntity : class
+    public abstract class AbstractSimpleShardingInstantYearKeyVirtualTableRoute<TEntity> : AbstractShardingTimeKeyInstantVirtualTableRoute<TEntity> where TEntity : class
     {
         protected override List<string> CalcTailsOnStart()
         {
